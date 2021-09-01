@@ -1,6 +1,7 @@
 import BarChart1 from '../components/barChart1'
 import RU_BarChart from '../components/RU_BarChart'
-import OutSchoolBarChart from '../components/outSchoolBarChart'
+import OutSchoolProvinceChart from '../components/ospBarChart'
+import OutSchoolChildrenChart from '../components/oscBarChart'
 
 const BarChart = () => {
   return (
@@ -12,7 +13,10 @@ const BarChart = () => {
         <RU_BarChart />
       </div>
       <div>
-        <OutSchoolBarChart />
+        <OutSchoolProvinceChart />
+      </div>
+      <div>
+        <OutSchoolChildrenChart />
       </div>
     </div>
   )

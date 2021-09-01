@@ -2,17 +2,17 @@ import { useEffect } from 'react'
 import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
-import { outSchoolData } from '../data'
+import { oscData } from '../data'
 
-const OutSchoolBarChart = () => {
+const OutSchoolChildrenChart = () => {
   useEffect(() => {
     am4core.useTheme(am4themes_animated)
     // Create chart instance
-    let chart = am4core.create('outSchoolBarChart', am4charts.XYChart)
-    chart.data = outSchoolData
+    let chart = am4core.create('outSchoolChildrenChart', am4charts.XYChart)
+    chart.data = oscData
 
     let title = chart.titles.create()
-    title.text = 'Out of School Children Provincially in Pakistan'
+    title.text = 'Out of School Children in Pakistan'
     title.fontSize = am4core.percent(150)
     title.marginBottom = 30
 
@@ -26,8 +26,8 @@ const OutSchoolBarChart = () => {
 
     // Create axes
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis())
-    categoryAxis.dataFields.category = 'province'
-    categoryAxis.title.text = 'Province'
+    categoryAxis.dataFields.category = 'year'
+    categoryAxis.title.text = 'Year'
     categoryAxis.title.fontSize = 20
     categoryAxis.renderer.grid.template.location = 0
     categoryAxis.renderer.line.strokeOpacity = 1
@@ -37,14 +37,14 @@ const OutSchoolBarChart = () => {
 
     let valueAxis = chart.yAxes.push(new am4charts.ValueAxis())
     valueAxis.min = 0
-    valueAxis.max = 6
+    valueAxis.max = 18
     valueAxis.title.text = 'Population'
     valueAxis.title.fontSize = 20
 
     function createSeries(field, name, stacked) {
       var series = chart.series.push(new am4charts.ColumnSeries())
       series.dataFields.valueY = field
-      series.dataFields.categoryX = 'province'
+      series.dataFields.categoryX = 'year'
       series.name = name
       // series.columns.template.fill = am4core.color('#104547')
       series.columns.template.tooltipText = '{name}: [bold]{valueY}[/]'
@@ -58,20 +58,19 @@ const OutSchoolBarChart = () => {
       bullet.fontSize = 13
     }
 
-    createSeries('y2010', '2010', false)
-    createSeries('y2012', '2012', false)
-    createSeries('y2014', '2014', false)
-    createSeries('y2016', '2016', false)
+    createSeries('male', 'Male', false)
+    createSeries('female', 'Female', false)
+    createSeries('overall', 'Overall', false)
 
     chart.legend = new am4charts.Legend()
     chart.legend.position = 'top'
   })
   return (
     <div
-      className='outSchoolBarChart shadow p-3 mb-5 bg-white rounded'
+      className='outSchoolChildrenChart shadow p-3 mb-5 bg-white rounded'
       style={{ width: '100%', height: '600px', marginTop: '50px' }}
     ></div>
   )
 }
 
-export default OutSchoolBarChart
+export default OutSchoolChildrenChart

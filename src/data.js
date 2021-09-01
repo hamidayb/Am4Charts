@@ -126,4 +126,31 @@ const outSchoolData = [
   },
 ]
 
-export { pieChartData, barChartData, ruData, outSchoolData }
+const oscData = [
+  {
+    year: '2010',
+    male: 4.7,
+    female: 6.4,
+    overall: 11.1,
+  },
+  {
+    year: '2012',
+    male: 4.1,
+    female: 5.9,
+    overall: 10,
+  },
+  {
+    year: '2014',
+    male: 5,
+    female: 7.1,
+    overall: 12.1,
+  },
+  {
+    year: '2016',
+    male: 6.3,
+    female: 8.9,
+    overall: 15.2,
+  },
+]
+
+export { pieChartData, barChartData, ruData, outSchoolData, oscData }
