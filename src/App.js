@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import PieChart from './screens/PieChart'
 import GanttChart from './screens/GanttChart'
+import BarChart from './screens/BarChart'
 import LineGraph from './screens/LineGraph'
 import VennDiagram from './screens/VennDiagram'
 import Header from './components/Header'
@@ -17,6 +18,7 @@ function App() {
         <Route path='/ganttchart' component={GanttChart} exact />
         <Route path='/linegraph' component={LineGraph} exact />
         <Route path='/venndiagram' component={VennDiagram} exact />
+        <Route path='/barchart' component={BarChart} exact />
       </main>
     </Router>
   )

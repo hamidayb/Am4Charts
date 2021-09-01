@@ -26,6 +26,11 @@ const Header = () => {
             </Link>
           </li>
           <li className='nav-item'>
+            <Link className='nav-link' to='/barchart'>
+              Bar Chart
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link className='nav-link' to='/linegraph'>
               Line Graph
             </Link>
