@@ -64,6 +64,9 @@ const OutSchoolChildrenChart = () => {
 
     chart.legend = new am4charts.Legend()
     chart.legend.position = 'top'
+    return () => {
+      chart.dispose()
+    }
   })
   return (
     <div

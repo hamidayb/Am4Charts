@@ -1,12 +1,13 @@
-import BarChart1 from '../components/barChart1'
-import RU_BarChart from '../components/RU_BarChart'
-import OutSchoolProvinceChart from '../components/ospBarChart'
-import OutSchoolChildrenChart from '../components/oscBarChart'
+import BarChart1 from '../components/barChart1';
+import RU_BarChart from '../components/RU_BarChart';
+import OutSchoolProvinceChart from '../components/ospBarChart';
+import OutSchoolChildrenChart from '../components/oscBarChart';
+import InstituteChart from '../components/institutionChart';
 
 const BarChart = () => {
   return (
     <div className='container barchart'>
-      <div>
+      {/* <div>
         <BarChart1 />
       </div>
       <div>
@@ -14,12 +15,15 @@ const BarChart = () => {
       </div>
       <div>
         <OutSchoolProvinceChart />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <OutSchoolChildrenChart />
+      </div> */}
+      <div>
+        <InstituteChart />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BarChart
+export default BarChart;

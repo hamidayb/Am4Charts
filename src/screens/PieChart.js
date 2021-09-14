@@ -8,19 +8,17 @@ const PieChart = () => {
     // Create chart instance
     let chart = am4core.create('piechart', am4charts.PieChart)
 
+    chart.data = pieChartData
+
     // Create pie series
     let series = chart.series.push(new am4charts.PieSeries())
     series.dataFields.value = 'litres'
     series.dataFields.category = 'country'
 
-    chart.data = pieChartData
-
     chart.legend = new am4charts.Legend()
 
     return () => {
-      if (chart) {
-        chart.dispose()
-      }
+      chart.dispose()
     }
   })
 

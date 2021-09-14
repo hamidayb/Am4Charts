@@ -38,6 +38,9 @@ const BarChart1 = () => {
     series.columns.template.tooltipText =
       'Series: {name}\nCategory: {categoryX}\nValue: {valueY}'
     series.columns.template.width = am4core.percent(70)
+    return () => {
+      chart.dispose()
+    }
   })
   return (
     <div
