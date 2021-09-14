@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -46,6 +46,11 @@ const Header = () => {
             </Link>
           </li>
           <li className='nav-item'>
+            <Link className='nav-link' to='/doublelinegraph'>
+              Double Line Graph
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link className='nav-link' to='ganttchart'>
               GanttChart
             </Link>
@@ -58,7 +63,7 @@ const Header = () => {
         </ul>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
