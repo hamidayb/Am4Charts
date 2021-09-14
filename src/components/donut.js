@@ -19,7 +19,10 @@ const Donut = ({ data, className }) => {
 
     chart.legend = new am4charts.Legend();
     chart.legend.valueLabels.template.text = '{strength}';
-
+    chart.legend.valueLabels.template.paddingLeft = '15px';
+    chart.legend.valueLabels.template.fontSize = '18px';
+    chart.legend.valueLabels.template.fontWeight = 'bold';
+    chart.legend.itemContainers.template.paddingBottom = '20px';
     chart.legend.position = 'right';
 
     return () => {
