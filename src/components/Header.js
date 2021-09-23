@@ -20,7 +20,7 @@ const Header = () => {
 
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <ul className='navbar-nav mr-auto'>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <Link className='nav-link' to='/piechart'>
               PieChart
             </Link>
@@ -28,6 +28,46 @@ const Header = () => {
           <li className='nav-item'>
             <Link className='nav-link' to='/barchart'>
               Bar Chart
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/mapchart'>
+              Map Chart
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='donutchart'>
+              Donut Chart
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/linegraph'>
+              Line Graph
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/doublelinegraph'>
+              Double Line Graph
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='ganttchart'>
+              GanttChart
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/venndiagram'>
+              Venn Diagram
+            </Link>
+          </li> */}
+          <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/observations'>
+              Observations
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/observationlisting'>
+              ObservationListing
             </Link>
           </li>
           <li className='nav-item'>
