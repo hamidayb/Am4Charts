@@ -71,8 +71,8 @@ const Header = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className='nav-link' to='/mapchart'>
-              Map Chart
+            <Link className='nav-link' to='/safetyconnect/audits'>
+              Audits
             </Link>
           </li>
           <li className='nav-item'>

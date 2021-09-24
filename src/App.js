@@ -10,8 +10,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './screens/Home'
 import Observations from './safetyConnect/Observations'
-import './App.css'
+import Audits from './safetyConnect/Audits'
 import ObservationListing from './safetyConnect/ObservationListing'
+import './App.css'
 
 function App() {
   return (
@@ -27,10 +28,18 @@ function App() {
         <Route path='/venndiagram' component={VennDiagram} exact />
         <Route path='/barchart' component={BarChart} exact />
         <Route path='/donutchart' component={DonutChart} exact /> */}
-        <Route path='/safetyconnect/observations' component={Observations} exact />
-        <Route path='/safetyconnect/observationlisting' component={ObservationListing} exact />
-        {/*<Route path='/mapchart' component={MapChart} exact />
-        <Route path='/linegraph' component={LineGraph} exact />
+        <Route
+          path='/safetyconnect/observations'
+          component={Observations}
+          exact
+        />
+        <Route
+          path='/safetyconnect/observationlisting'
+          component={ObservationListing}
+          exact
+        />
+        <Route path='/safetyconnect/audits' component={Audits} exact />
+        {/*<Route path='/linegraph' component={LineGraph} exact />
         <Route path='/doublelinegraph' component={DoubleLineGraph} exact />
         <Route path='/venndiagram' component={VennDiagram} exact />
         <Route path='/barchart' component={BarChart} exact />
