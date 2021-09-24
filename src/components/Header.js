@@ -81,28 +81,8 @@ const Header = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className='nav-link' to='donutchart'>
-              Donut Chart
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link className='nav-link' to='/linegraph'>
-              Line Graph
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link className='nav-link' to='/doublelinegraph'>
-              Double Line Graph
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link className='nav-link' to='ganttchart'>
-              GanttChart
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link className='nav-link' to='/venndiagram'>
-              Venn Diagram
+            <Link className='nav-link' to='/safetyconnect/incidents'>
+              Incidents Potential Area
             </Link>
           </li>
         </ul>

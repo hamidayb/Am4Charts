@@ -55,6 +55,7 @@ const CatObservations = () => {
     series.columns.template.width = am4core.percent(10)
     series.columns.template.column.cornerRadiusBottomRight = '25px'
     series.columns.template.column.cornerRadiusTopRight = '25px'
+    series.strokeWidth = 0
 
     return () => {
       chart.dispose()

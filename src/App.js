@@ -13,6 +13,7 @@ import Observations from './safetyConnect/Observations'
 import Audits from './safetyConnect/Audits'
 import ObservationListing from './safetyConnect/ObservationListing'
 import CatObservations from './safetyConnect/CatObservations'
+import Incident from './safetyConnect/Incident'
 import './App.css'
 
 function App() {
@@ -45,8 +46,8 @@ function App() {
           component={CatObservations}
           exact
         />
-        {/*<Route path='/doublelinegraph' component={DoubleLineGraph} exact />
-        <Route path='/venndiagram' component={VennDiagram} exact />
+        <Route path='/safetyconnect/incidents' component={Incident} exact />
+        {/*<Route path='/venndiagram' component={VennDiagram} exact />
         <Route path='/barchart' component={BarChart} exact />
         <Route path='/donutchart' component={DonutChart} exact /> */}
       </main>

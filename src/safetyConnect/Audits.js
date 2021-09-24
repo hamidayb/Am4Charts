@@ -55,6 +55,7 @@ const Audits = () => {
     series.columns.template.width = am4core.percent(60)
     series.columns.template.column.cornerRadiusTopLeft = 8
     series.columns.template.column.cornerRadiusTopRight = 8
+    series.strokeWidth = 0
 
     let valueLabel = series.columns.template.createChild(am4core.Label)
     valueLabel.text = '{value}'
