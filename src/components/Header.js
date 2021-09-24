@@ -71,6 +71,11 @@ const Header = () => {
             </Link>
           </li>
           <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/catobservations'>
+              Categories Observations
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link className='nav-link' to='/safetyconnect/audits'>
               Audits
             </Link>

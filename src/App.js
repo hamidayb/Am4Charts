@@ -12,6 +12,7 @@ import Home from './screens/Home'
 import Observations from './safetyConnect/Observations'
 import Audits from './safetyConnect/Audits'
 import ObservationListing from './safetyConnect/ObservationListing'
+import CatObservations from './safetyConnect/CatObservations'
 import './App.css'
 
 function App() {
@@ -39,8 +40,12 @@ function App() {
           exact
         />
         <Route path='/safetyconnect/audits' component={Audits} exact />
-        {/*<Route path='/linegraph' component={LineGraph} exact />
-        <Route path='/doublelinegraph' component={DoubleLineGraph} exact />
+        <Route
+          path='/safetyconnect/catobservations'
+          component={CatObservations}
+          exact
+        />
+        {/*<Route path='/doublelinegraph' component={DoubleLineGraph} exact />
         <Route path='/venndiagram' component={VennDiagram} exact />
         <Route path='/barchart' component={BarChart} exact />
         <Route path='/donutchart' component={DonutChart} exact /> */}

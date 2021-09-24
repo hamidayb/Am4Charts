@@ -56,12 +56,6 @@ const Audits = () => {
     series.columns.template.column.cornerRadiusTopLeft = 8
     series.columns.template.column.cornerRadiusTopRight = 8
 
-    // let bullet = series.bullets.push(new am4charts.LabelBullet())
-    // bullet.label.text = '{valueY}'
-    // bullet.verticalCenter = 'middle'
-    // bullet.horizontalCenter = 'middle'
-    // bullet.fontSize = 13
-
     let valueLabel = series.columns.template.createChild(am4core.Label)
     valueLabel.text = '{value}'
     valueLabel.fontSize = 20
