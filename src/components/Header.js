@@ -85,6 +85,16 @@ const Header = () => {
               Incidents Potential Area
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/riskanalysis'>
+              Risk Analysis
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/closure'>
+              Closure Statistics
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

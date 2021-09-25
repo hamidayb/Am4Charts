@@ -3,11 +3,11 @@ import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
 
-const Observations = () => {
+const Closure = () => {
   useEffect(() => {
     am4core.useTheme(am4themes_animated)
 
-    let chart = am4core.create('observations', am4charts.PieChart)
+    let chart = am4core.create('chartdiv', am4charts.PieChart)
     chart.data = [
       {
         status: 'Completed',
@@ -53,7 +53,7 @@ const Observations = () => {
 
     let label = series.createChild(am4core.Label)
     label.html =
-      '<div style="text-align: center"><p style="opacity: 0.5; padding: 0px; margin: 0px">Overall <br />Observations</p><p style="font-size: 32px; font-weight: bold; padding: 0px; margin: 0px">31,20</p></div>'
+      '<div style="text-align: center"><p style="opacity: 0.5; padding: 0px; margin: 0px">Total <br />Observations</p><p style="font-size: 32px; font-weight: bold; padding: 0px; margin: 0px">103</p></div>'
     label.horizontalCenter = 'middle'
     label.verticalCenter = 'middle'
     label.fontSize = '1.1rem'
@@ -65,11 +65,8 @@ const Observations = () => {
     }
   })
   return (
-    <div
-      className='observations'
-      style={{ width: '300px', height: '500px' }}
-    ></div>
+    <div className='chartdiv' style={{ width: '300px', height: '500px' }}></div>
   )
 }
 
-export default Observations
+export default Closure

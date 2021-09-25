@@ -14,7 +14,7 @@ const Audits = () => {
 
     function createXYChart(data, titleHTML, titleColor) {
       let chart = container.createChild(am4charts.XYChart)
-      chart.data = chart.width = 500
+      chart.width = 500
       chart.height = 500
       chart.data = data
       chart.numberFormatter.numberFormat = '00'

@@ -208,32 +208,20 @@ const ObservationListing = () => {
     valueAxis.renderer.baseGrid.disabled = true
     valueAxis.renderer.grid.template.strokeWidth = 0
 
-    // Create series
-    let series = chart.series.push(new am4charts.LineSeries())
-    series.dataFields.valueY = 'submitted'
-    series.name = 'Submitted'
-    series.dataFields.valueX = 'value'
-    series.stroke = am4core.color('#1a8a16')
-    series.tensionX = 0.8
-    series.strokeWidth = 2
+    function createSeries(valueY, name, color) {
+      // Create series
+      let series = chart.series.push(new am4charts.LineSeries())
+      series.dataFields.valueY = valueY
+      series.name = name
+      series.dataFields.valueX = 'value'
+      series.stroke = am4core.color(color)
+      series.tensionX = 0.8
+      series.strokeWidth = 4
+    }
 
-    // Create series
-    let series2 = chart.series.push(new am4charts.LineSeries())
-    series2.dataFields.valueY = 'progress'
-    series2.name = 'In Progress'
-    series2.dataFields.valueX = 'value'
-    series2.stroke = am4core.color('#1996d4')
-    series2.tensionX = 0.8
-    series2.strokeWidth = 2
-
-    // Create series
-    let series3 = chart.series.push(new am4charts.LineSeries())
-    series3.dataFields.valueY = 'completed'
-    series3.name = 'Completed'
-    series3.dataFields.valueX = 'value'
-    series3.stroke = am4core.color('#78105a')
-    series3.tensionX = 0.8
-    series3.strokeWidth = 2
+    createSeries('submitted', 'Submitted', '#1a8a16')
+    createSeries('progress', 'In Progress', '#1996d4')
+    createSeries('completed', 'Completed', '#78105a')
 
     // Add cursor
     chart.cursor = new am4charts.XYCursor()
