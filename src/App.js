@@ -15,6 +15,7 @@ import ObservationListing from './safetyConnect/ObservationListing'
 import CatObservations from './safetyConnect/CatObservations'
 import Incident from './safetyConnect/Incident'
 import Risk_Analysis from './safetyConnect/Risk_Analysis'
+import ObservationAnalysis from './safetyConnect/ObservationAnalysis'
 import Closure from './safetyConnect/Closure'
 import './App.css'
 
@@ -50,11 +51,16 @@ function App() {
         />
         <Route path='/safetyconnect/incidents' component={Incident} exact />
         <Route
-          path='/safetyconnect/riskanalysis'
+          path='/safetyconnect/risk-analysis'
           component={Risk_Analysis}
           exact
         />
         <Route path='/safetyconnect/closure' component={Closure} exact />
+        <Route
+          path='/safetyconnect/observation-analysis'
+          component={ObservationAnalysis}
+          exact
+        />
         {/*<Route path='/donutchart' component={DonutChart} exact /> */}
       </main>
     </Router>

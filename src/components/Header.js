@@ -86,13 +86,18 @@ const Header = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className='nav-link' to='/safetyconnect/riskanalysis'>
+            <Link className='nav-link' to='/safetyconnect/risk-analysis'>
               Risk Analysis
             </Link>
           </li>
           <li className='nav-item'>
             <Link className='nav-link' to='/safetyconnect/closure'>
               Closure Statistics
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/observation-analysis'>
+              Observation Analysis
             </Link>
           </li>
         </ul>
