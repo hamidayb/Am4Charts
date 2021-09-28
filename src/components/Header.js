@@ -100,6 +100,11 @@ const Header = () => {
               Observation Analysis
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/safetyconnect/incident-reporting'>
+              Incident Reporting
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

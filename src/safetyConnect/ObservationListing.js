@@ -232,6 +232,7 @@ const ObservationListing = () => {
     chart.cursor.lineX.fillOpacity = 0.1
 
     chart.legend = new am4charts.Legend()
+    chart.legend.htmlContainer = '<i class="far fa-circle"></i>'
     chart.legend.useDefaultMarker = true
     let marker = chart.legend.markers.template.children.getIndex(0)
     marker.cornerRadius(12, 12, 12, 12)
@@ -244,7 +245,7 @@ const ObservationListing = () => {
   })
 
   return (
-    <div className='chartdiv' style={{ width: '100%', height: '500px' }}></div>
+    <div className="chartdiv" style={{ width: '100%', height: '500px' }}></div>
   )
 }
 

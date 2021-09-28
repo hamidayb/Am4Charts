@@ -42,7 +42,7 @@ const ObservationAnalysis = () => {
     categoryAxis.renderer.axisFills.template.disabled = true
     categoryAxis.interactionsEnabled = false
     categoryAxis.renderer.minGridDistance = 10
-    categoryAxis.renderer.inversed = true
+    // categoryAxis.renderer.inversed = true
     categoryAxis.hidden = true
 
     let valueAxis = chart.xAxes.push(new am4charts.ValueAxis())
@@ -76,7 +76,7 @@ const ObservationAnalysis = () => {
     chart.legend = new am4charts.Legend()
   })
   return (
-    <div className='chartdiv' style={{ width: '100vw', height: '80vh' }}></div>
+    <div className="chartdiv" style={{ width: '100vw', height: '80vh' }}></div>
   )
 }
 
